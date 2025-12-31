@@ -1,0 +1,20 @@
+{
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "build": "vite build",
+        "dev": "vite",
+        "sass": "sass resources/scss/main.scss:resources/css/style.css",
+        "sass:watch": "sass resources/scss/main.scss:resources/css/style.css --watch",
+        "sass:no-map": "sass resources/scss/main.scss:resources/css/style.css --style=compressed --no-source-map"        
+    },
+    "devDependencies": {
+        "@tailwindcss/vite": "^4.1.17",
+        "axios": "^1.13.2",
+        "concurrently": "^9.2.1",
+        "laravel-vite-plugin": "^2.0.1",
+        "tailwindcss": "^4.1.17",
+        "vite": "^7.2.7",
+        "vite-plugin-static-copy": "^3.1.4"
+    }
+}

@@ -1,0 +1,143 @@
+@use "../utils/mixins";
+@use "../utils/variables";
+
+// summernote chevron icon remove
+.note-icon-caret:before{
+    content: none ;
+}
+
+// modal box shadow remove
+.modal .modal-content{
+    box-shadow: none;
+}
+
+// dark mode accordion background fix
+[data-theme="dark"] .custom-accordion-items .accordions-items-seperate .accordion-item .accordion-header .accordion-button{
+    background-color: #0D0D0D !important;
+}
+
+// dark mode badge soft dark text color fix
+[data-theme="dark"] .badge.badge-soft-dark{
+    color: #ffff !important;
+}
+
+// dark mode user icon color fix
+[data-theme="dark"] .user-icon {
+    color: #000 !important;
+}
+
+// invoice logo switcher
+.invoice-logo {
+    img.logo-white {
+      display: none;
+    }
+}
+
+// dark mode invoice logo switcher
+[data-theme="dark"] .invoice-logo {
+    img.logo {
+      display: none !important;
+    }
+    img.logo-white {
+      display: block !important;
+    }
+}
+
+// signature image invert for dark mode
+[data-theme="dark"] .signature-img {
+    filter: brightness(0) saturate(100%) invert(1);
+}
+
+// dark mode notes dropdown menu item color fix
+[data-theme="dark"] .dropdown-menu.notes-menu a.dropdown-item {
+    color: #7A8086 !important;
+    &:hover {
+        background-color: variables.$primary !important;
+        color: variables.$white !important;
+    }
+}
+
+// btn outline dark mode border and text color fix
+[data-theme="dark"] .btn-outline-dark {
+    border-color: #4A4A4A !important;
+    color: #7A8086 !important;
+}
+
+// product details page dark mode list group item background fix
+[data-theme="dark"] .details-list-group .list-group-item{
+    background: #000 !important;
+    border: none !important;
+}
+
+// product details page dark mode gray text color fix
+[data-theme="dark"] .bg-gray-100{
+    background-color: #6B7280 !important;
+}
+
+// dark mode table head text color fix
+[data-theme=dark] .table .thead-dark th{
+    color: #000;
+}
+
+// dark mode offcanvas close button invert
+[data-theme=dark] .offcanvas-header .btn-close{
+    filter: brightness(0) saturate(100%) invert(1);
+}
+
+// dark mode sms image invert (sms-settings page)
+[data-theme=dark] .sms-img{
+    filter: invert(1) brightness(40.5);
+}
+
+// dark mode dropdown menu item hover background and text color fix
+[data-theme=dark] .dropdown-menu .dropdown-item:not(.active):hover, [data-theme=dark] .dropdown-menu .dropdown-item:not(.active):focus, [data-theme=dark] .dropdown-menu .dropdown-item:not(.active):active {
+    background-color: variables.$primary !important;
+    color: variables.$white !important;
+}
+
+// dark mode btn check color fix
+[data-theme=dark] [data-color=primary] .btn-check:checked + .btn, [data-color=primary] .btn.active, [data-color=primary] .btn.show, [data-color=primary] .btn.show:hover, [data-color=primary] .btn:first-child:active, [data-color=primary] :not(.btn-check) + .btn:active{
+    color: "#ffff" !important;
+}
+
+// input icon end width fix
+.input-icon-end {
+    width: 215px;
+}
+
+// dark mode form switch input background color fix
+[data-theme=dark] .form-check.form-switch .form-check-input{
+    height: 15px !important;
+    width: 32px !important;
+    background-color: #B9B9C3 !important;
+    margin-bottom: 0 !important;
+}
+
+// dark mode mobile user menu color fix
+[data-theme=dark] .header .mobile-user-menu .dropdown-menu a{
+    color: #ffff !important;
+}
+
+[data-theme=dark] .chat-wrapper .chat .chat-body .messages .chats .chat-content .message-content {
+    color: #ffffff;
+}
+
+[data-theme=dark] .chat-wrapper .chat-users-wrap .chat-user-list {
+    box-shadow: none;
+    &:hover {
+        box-shadow: 0px 1px 5px 1px rgb(243, 243, 243) !important;
+    }
+}
+
+[data-theme=dark] .bg-lightdanger-gradient {
+    background: #0D0D0D;
+}
+[data-theme=dark] .bg-lightpink-gradient {
+    background: #0D0D0D;
+}
+[data-theme=dark] .bg-lightpurple-gradient {
+    background: #0D0D0D;
+}
+[data-theme=dark] .bg-lightsuccess-gradient {
+    background: #0D0D0D;
+}
