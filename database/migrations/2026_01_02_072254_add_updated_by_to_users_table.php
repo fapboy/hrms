@@ -16,10 +16,6 @@ return new class extends Migration
                 ->nullable()->after('updated_at')->constrained('users')->nullOnDelete();
             $table->foreignId('supervisor_id')
                 ->nullable()->constrained('users')->nullOnDelete();
-            $table->foreignId('division_id')->nullable()
-                ->constrained('divisions')->nullOnDelete();
-            $table->foreignId('role_id')->nullable()
-                ->constrained('roles')->nullOnDelete();
         });
     }
 

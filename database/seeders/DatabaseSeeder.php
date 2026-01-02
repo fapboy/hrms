@@ -19,6 +19,7 @@ class DatabaseSeeder extends Seeder
             CountrySeeder::class,
             StateSeeder::class,
             CitySeeder::class,
+            // PermissionSeeder::class,
         ]);
 
         User::factory()->create([

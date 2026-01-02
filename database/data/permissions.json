@@ -1,0 +1,18 @@
+[
+  {
+    "key": "view",
+    "label": ""
+  },
+  {
+    "key": "create_users",
+    "label": "Can create new users"
+  },
+  {
+    "key": "view_payroll",
+    "label": "Can view payroll data"
+  },
+  {
+    "key": "edit_payroll",
+    "label": null
+  }
+]
